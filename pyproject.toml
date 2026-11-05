@@ -1,0 +1,26 @@
+[project]
+name = "project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mallat Jawad", email = "jawad.mallat@student-cs.fr" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel==7.3.0",
+    "matplotlib==3.11.2",
+    "numpy==2.4.6",
+    "pandas==3.0.5",
+    "scikit-image==0.26.0",
+    "scikit-learn==1.7.2",
+    "torch==2.14.0",
+    "torchvision==0.29.0",
+]
+
+[project.scripts]
+project = "project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
